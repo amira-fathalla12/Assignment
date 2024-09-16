@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Details Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        th,
+        td {
+            border: 1px solid;
+            padding: 8px;
+        }
+
+        .bg-coordinator,
+        .bg-beth,
+        .bg-bill,
+        .bg-bruce {
+            background-color: rgb(245, 214, 234);
+        }
+
+        .bg-south-east-upper,
+        .bg-dylan,
+        .bg-lower {
+            background-color: rgb(219, 184, 167);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption> -----Details-----</caption>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Manager</th>
+                <th class="bg-coordinator">Coordinator</th>
+                <th>Local Rep</th>
+                <th>Secretary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>North</td>
+                <td>Adam</td>
+                <td class="bg-coordinator bg-beth">Beth</td>
+                <td>Callum</td>
+                <td>Diane</td>
+            </tr>
+            <tr>
+                <td>South West</td>
+                <td rowspan="3" colspan="3">Annie</td>
+                <td>Dodie</td>
+            </tr>
+            <tr>
+                <td class="bg-south-east-upper">South East Upper</td>
+                <td class="bg-dylan">Dylan</td>
+            </tr>
+            <tr>
+                <td>South East <span class="bg-lower">Lower</span></td>
+                <td>Dahlia</td>
+            </tr>
+            <tr>
+                <td>East</td>
+                <td>Ash</td>
+                <td class="bg-coordinator bg-bill">Bill</td>
+                <td>Cecilia</td>
+                <td>Dave</td>
+            </tr>
+            <tr>
+                <td>West</td>
+                <td>Art</td>
+                <td class="bg-coordinator bg-bruce">Bruce</td>
+                <td>Colin</td>
+                <td>Danny</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing and Non-editable Input</title>
+</head>
+<body>
+    <h2>Disappearing Input and Non-editable Input</h2>
+
+    <!-- Disappearing Input -->
+    <label for="disappearingInput">Disappearing Input (after entering data):</label>
+    <input type="text" id="disappearingInput" oninput="hideInput()"><br><br>
+
+    <!-- Non-editable Input -->
+    <label for="nonEditableInput">Non-editable Input:</label>
+    <input type="text" id="nonEditableInput" value="This is non-editable" readonly><br><br>
+
+<script src="main.js"></script>
+</body>
+</html>
